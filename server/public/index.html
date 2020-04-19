@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>LM35 Temperature</title>
+    <style media="screen">
+        html,
+        body {
+            height: 100%;
+        }
+        
+        body {
+            display: flex;
+            align-items: center;
+            background: #00bf8f;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to bottom, #001510, #00bf8f);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to bottom, #001510, #00bf8f);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+    </style>
+</head>
+
+<body class="text-center">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+
+    <div class="container">
+        <header class="masthead mb-auto">
+            <div class="inner">
+                <h3 class="masthead-brand text-white">LM35 TEMPERATURE</h3>
+
+            </div>
+        </header>
+        <div class="row justify-content-center align-self-center">
+            <div class="card">
+                <h1 id="temperature" class="display-1 p-4"></h1>
+            </div>
+
+
+        </div>
+        <canvas id="myChart"></canvas>
+
+    </div>
+
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+
+</html>
